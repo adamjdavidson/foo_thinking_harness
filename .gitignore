@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+data/
+*.log
+# Personal files kept out of the public repo
+PROJECT_HANDOFF.md
+# Local AI-agent skills
+.agents/
+skills-lock.json

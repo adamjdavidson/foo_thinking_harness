@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A physical instrument for thinking with AI — concept and photo guide</title>
+<style>
+:root{color-scheme:light;--ink:#20332d;--muted:#50645b;--paper:#faf9f5;--line:#d7ded5;--accent:#23634e}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1140px;margin:auto;padding:40px 28px 64px}h1{font-size:clamp(30px,4vw,48px);line-height:1.12;max-width:900px;margin:12px 0 20px}h2{font-size:27px;line-height:1.2;margin:40px 0 16px}h3{font-size:21px;line-height:1.25;margin:0 0 10px}p{margin:0 0 14px}.eyebrow{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.lead{font-size:21px;max-width:940px}a{color:var(--accent);text-underline-offset:3px}nav{display:flex;gap:20px;flex-wrap:wrap;margin:24px 0 30px;font-size:15px}.scope{font-size:15px;color:var(--muted);max-width:960px}.layout{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:24px 0}.zone{border-top:3px solid var(--accent);padding-top:13px}.zone strong{display:block;margin-bottom:8px}.zone p{font-size:15px}.screen{background:#20332d;color:#f7faf5;padding:22px;border-radius:12px;max-width:680px;margin:22px 0;font:16px/1.7 ui-monospace,SFMono-Regular,monospace;overflow-wrap:anywhere}.screen .small{font-size:13px;color:#c6dace}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.control{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;scroll-margin-top:20px}.photo{display:block;height:245px;background:#f1f2ec;padding:14px}.photo img{width:100%;height:100%;object-fit:contain}.text{padding:22px}.number{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}.caption{font-size:13px;color:var(--muted);margin-bottom:18px}.control p{font-size:16px}.difference{border-top:1px solid var(--line);padding-top:12px;margin-top:14px}.label{font-weight:650}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border-bottom:1px solid var(--line);padding:13px 12px;text-align:left;vertical-align:top}th{background:#edf0e8}.walkthrough{max-width:900px}.walkthrough li{margin:0 0 12px}.notes{max-width:950px;font-size:15px}.footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted)}@media(max-width:700px){main{padding:26px 18px 42px}.gallery,.layout{grid-template-columns:1fr}.photo{height:225px}.lead{font-size:19px}.text{padding:18px}th,td{padding:10px 8px}}
+</style>
+<style>
+.inspiration{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:26px 0 30px}.inspiration figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.inspiration img{display:block;width:100%;height:220px;object-fit:contain;padding:12px}.inspiration figcaption{padding:0 16px 16px;font-size:14px;color:var(--muted)}.inspiration strong{display:block;color:var(--ink);margin-bottom:5px}@media(max-width:700px){.inspiration{grid-template-columns:1fr}.inspiration img{height:250px}}
+</style>
+<meta property="og:title" content="A physical instrument for thinking with AI" />
+<meta property="og:description" content="A conceptual design for a playful physical controller featuring haptic knobs, pedals, and tactile sensors to help users explore and refine ideas with AI." />
+<meta property="og:url" content="https://cosmic-nectar-wk3j.here.now/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://here.now/og/cosmic-nectar-wk3j.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta name="twitter:image" content="https://here.now/og/cosmic-nectar-wk3j.jpg" />
+<meta name="twitter:card" content="summary_large_image" /></head>
+<body><main>
+<div class="eyebrow">Exploratory design · September 17, 2026</div>
+<h1>The Problem:</h1>
+<p class="lead">As OpenAI has shown in <a href="https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf#page=13">The State of Enterprise AI (2025)</a>, there is a massive gulf in AI use between the most active frontier users and the median enterprise user.</p>
+<p>In the report, frontier workers are those at the 95th percentile of adoption intensity. They send six times as many messages as the median worker; the gap rises to eleven times for writing and communication and seventeen times for coding. <a href="https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf#page=13">Report, pp. 13–14</a>.</p>
+<p>A lot of people, especially knowledge workers in large enterprises, struggle to understand the more transformational uses of AI in their daily work: how it can help them think, write, explore, and approach a problem in a new way.</p>
+<p>Many are intimidated by the need to think up just the right words to type, or are discouraged when a model returns an unsatisfactory response and don't know how to correct it.</p>
+<p>While training and experience will solve some of these issues, I want to explore a different approach: <strong>making AI more fun, interactive, explicitly wild and playful, while ensuring it is useful.</strong></p>
+<p>Knowledge workers constantly need to explore ideas, refine them, critique and improve them, and perform a host of thinking maneuvers. A playful, interactive approach might help users explore their own thinking in entirely novel ways—ways that could dramatically increase adoption.</p>
+<h2>A physical instrument for thinking with AI</h2>
+<p class="lead">Inspired by children's steering-wheel toys and busy boards, flight simulators, and guitar pedalboards: a wild, slightly ridiculous, inviting machine for thinking with AI. Big knobs, levers, lights, things to squeeze, and pedals under your feet invite you to turn, touch, move, and see what happens.</p>
+<p><strong>The big idea is to engage people in entirely different ways of interacting with LLMs.</strong> The ambition is more fun, more surprising, and ultimately more useful output. The physical controls offer something to try: turn a knob to explore further, squeeze an object to ask for a stronger challenge, or choose a card to see an idea through someone else's eyes. Whether those interactions improve the work is what we want to discover.</p>
+<div class="inspiration" aria-label="Inspirations">
+<figure><figcaption><strong>The toy steering console</strong>Oversized controls, vivid colors, and the invitation to play at operating a machine.</figcaption></figure>
+<figure><figcaption><strong>The busy board</strong>Different gestures on one surface: flip a switch, turn a dial, use a key, or plug something in.</figcaption></figure>
+<figure><figcaption><strong>The flight simulator</strong>Two-handed steering, a bank of levers, and the feeling of actively piloting something.</figcaption></figure>
+</div>
+<p>Guitar pedals add another inspiration: use your feet to change what happens while your hands keep working. A stomp switch makes a decisive move; an expression pedal lets you gradually change a setting. Together, these references suggest a desk console, a floor module, and a few handheld objects, all connected to the same conversation.</p>
+<p><strong>The Codex Micro is a cool machine, and a Stream Deck with a pedal is pretty cool too.</strong> They are compact, fairly contained controllers. Micro offers status lights; Stream Deck offers small displays on its keys, with a touch strip on the +. Neither provides the programmable knob resistance and end stops proposed here. We want a larger display for the idea and the agent's response, a wider variety of gestures, and a form that feels wilder, more ridiculous, and more inviting to experiment with.</p>
+<p>The strongest hardware additions are knobs with programmable resistance, continuous foot position, pressure sensing, and physical objects that select a perspective or thinking move. The Pi lets the console run as its own networked appliance. Conversation awareness and contextual actions come from the session software; existing controllers can use that software too.</p>
+<p>Using every input makes this a <strong>modular exploration kit</strong>. The Pi sits inside the main console. A VM or Mac manages the conversation and agent tools; the model runs through the selected provider or on that remote machine. You select what you are working on, adjust how the agent should approach it, and ask it to act. The device shows the target, the settings, and what the agent is doing. An optional larger screen shows full drafts and answers.</p>
+<p class="scope">This is a proposed design, not an implemented or validated product. Photos below show existing controls or the components that would go inside custom objects. They are references, not a confirmed compatible shopping list. The mappings are our proposals; the linked sources establish the hardware capabilities.</p>
+<nav aria-label="Guide sections"><a href="#experience">How it feels</a><a href="#photos">All 13 photo references</a><a href="#comparison">What existing controllers can do</a><a href="#example">A complete interaction</a><a href="#engineering">What we would build</a></nav>
+
+<h2 id="experience">Three physical zones, one shared conversation</h2>
+<div class="layout">
+<section class="zone"><strong>On the desk</strong><p>Two haptic knobs, labeled mode/action buttons, a fader, a joystick, a touch ribbon, a trackball, and a small display. The controls have clear default meanings; a visibly labeled layer changes the secondary mappings.</p></section>
+<section class="zone"><strong>Under your feet</strong><p>A pair of stomp switches and an expression pedal. Trigger an action or speak without taking your hands off the keyboard; use heel-to-toe movement to set a continuous modifier.</p></section>
+<section class="zone"><strong>In your hand</strong><p>A squeeze puck, a touch-sensitive object, a motion-sensing object, and tagged cards. These explore whether holding, touching, or choosing a physical object makes thinking moves easier to discover.</p></section>
+</div>
+<p>The display shows each control's current meaning, so people can consult it instead of memorizing every mapping. It might show:</p>
+<div class="screen" role="img" aria-label="Example device display: workshop proposal, skeptical member perspective, critique mode, moderate range, thorough depth, next action challenge, ready">
+<div class="small">WORKING ON</div><div>Workshop proposal · version 3</div><div>Perspective: Skeptical member</div><div>Mode: CRITIQUE</div><div>Range: Moderate &nbsp; Depth: Thorough</div><div>Next action: Challenge the premise</div><div class="small">READY · Settings apply to next request</div>
+</div>
+<p>Turning and touching update the display immediately. Pressing an action sends one request with a snapshot of those settings. The agent's acknowledgment, progress, result, or question returns to the device. We would not send a model request for every millimeter of pedal movement.</p>
+
+<h2 id="photos">The controls: photos, behavior, and actual differences</h2>
+<div class="gallery">
+
+<article class="control" id="haptic">
+<a class="photo" href="https://github.com/scottbez1/smartknob" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/ip641WmY4pA/maxresdefault.jpg" alt="Scott Bezek's SmartKnob haptic rotary controller with a round display"></a>
+<div class="text"><span class="number">01 · Desk console · two units</span><h3>Haptic knobs: range and depth</h3><p class="caption">Reference: <a href="https://github.com/scottbez1/smartknob">SmartKnob</a>; creator's demo thumbnail. A motor and position sensor generate programmable resistance, clicks, and end stops.</p>
+<p><span class="label">How ours works.</span> Range moves from close variations to distant alternatives. Depth moves between quick and more deliberate examination. Five distinct range positions could feel like five clicks; a mode with three choices could instead have three stronger clicks. A small tactile pulse acknowledges a setting. Local motor electronics produce the feel; the remote agent is not in the motor-control loop.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> A Micro has one dial; Stream Deck + has multiple dials. Neither documented standard control provides software-adjustable force or end stops. This is a real new physical capability. Range is a behavioral instruction; depth maps to supported agent settings, not a guaranteed answer time.</p></div></article>
+
+<article class="control" id="buttons">
+<a class="photo" href="https://www.adafruit.com/product/492" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/492-00.jpg" alt="An illuminated round arcade pushbutton"></a>
+<div class="text"><span class="number">02 · Desk console</span><h3>Mode buttons, action buttons, and layers</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/492">Adafruit illuminated 30 mm pushbutton</a>. Photo shows one example button, not an assembled panel.</p>
+<p><span class="label">How ours works.</span> Three prominent labeled buttons select Explore, Prototype, or Critique. Separate Go and Another buttons trigger an explicit request. A smaller Layer button switches the secondary controls between Thinking and Reviewing; the display always names the active layer and meanings. Selecting Prototype alone does not execute an unspecified task.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> Buttons, layers, and skills are already possible on a Micro or Stream Deck. Our gain is their shape, spacing, labeling, and placement in the same custom enclosure—not a new software capability.</p></div></article>
+
+<article class="control" id="footswitch">
+<a class="photo" href="https://www.boss.info/us/products/fs-6/" target="_blank" rel="noopener"><img src="https://static.roland.com/assets/images/products/main/fs_6_top_main.jpg" alt="BOSS FS-6 dual footswitch with two large foot-operated switches"></a>
+<div class="text"><span class="number">03 · Floor module</span><h3>Stomp switches: talk and act</h3><p class="caption">Reference: <a href="https://www.boss.info/us/products/fs-6/">BOSS FS-6</a>, a dual footswitch with selectable momentary or latching behavior.</p>
+<p><span class="label">How ours works.</span> Hold the left switch to dictate through a microphone connected to the console or host. Releasing stops capture and shows the transcript for review. Tap the right switch to run the displayed action on the displayed target. In a reviewing layer it could instead move to the next alternative. LEDs and the screen distinguish recording from processing.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> Hands-free actions expand a base Micro or desktop Stream Deck, but are not exclusive: <a href="https://www.elgato.com/us/en/p/stream-deck-pedal">Elgato already sells Stream Deck Pedal</a>. These switches would need an interface; the BOSS unit is not a USB AI controller.</p></div></article>
+
+<article class="control" id="expression">
+<a class="photo" href="https://www.boss.info/us/products/ev-30/" target="_blank" rel="noopener"><img src="https://static.roland.com/assets/images/products/main/ev-30_main.jpg" alt="BOSS EV-30 heel-to-toe expression pedal"></a>
+<div class="text"><span class="number">04 · Floor module</span><h3>Expression pedal: a continuous modifier</h3><p class="caption">Reference: <a href="https://www.boss.info/us/products/ev-30/">BOSS EV-30</a>. Its pedal position provides continuous expression control through TRS outputs.</p>
+<p><span class="label">How ours works.</span> Heel means stay close to the idea; toe means explore more distant possibilities. The pedal temporarily overrides the Range knob, and the display names that override. A stomp action captures the current value for the next request. We would define a clear handoff when the knob is touched again; a standard expression pedal is not necessarily spring-return.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> This adds continuous foot position, which neither base device nor Stream Deck Pedal supplies. A Mac can also support a separate expression controller; a Pi is not uniquely required. An analog input interface or suitable MIDI interface reads this example pedal.</p></div></article>
+
+<article class="control" id="pressure">
+<a class="photo" href="https://www.adafruit.com/product/1075" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/1075-00.jpg" alt="A square force-sensitive resistor that can sit under a pressure pad or in a squeeze object"></a>
+<div class="text"><span class="number">05 · Desk pad or handheld puck</span><h3>Pressure pad / squeeze puck</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/1075">Adafruit square force-sensitive resistor</a>. The pictured sensor would be enclosed under a soft pad or inside a squeezable object.</p>
+<p><span class="label">How ours works.</span> In Critique, light pressure selects gentle questioning and firmer pressure selects stronger scrutiny. The display shows that meaning and the selected level. Hold the pressure while pressing Go or the action pedal; that action samples it. Releasing restores the normal setting. Pressure would be mapped to a few stable levels, not presented as precise force measurement.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> This adds measured force and a squeeze gesture. Base Micro and Stream Deck controls do not measure it. FSR hardware, an analog reader, and calibration are needed; pressing an ordinary button harder does not provide this signal.</p></div></article>
+
+<article class="control" id="fader">
+<a class="photo" href="https://www.adafruit.com/product/5295" target="_blank" rel="noopener"><img src="https://cdn-shop.adafruit.com/970x728/5295-01.jpg" alt="Adafruit NeoSlider: a long physical fader with four programmable LEDs"></a>
+<div class="text"><span class="number">06 · Desk console</span><h3>Fader: preserve versus transform</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/5295">Adafruit NeoSlider</a>, a physical slide potentiometer with I2C readout and LEDs.</p>
+<p><span class="label">How ours works.</span> In writing, slide toward Preserve to retain wording and structure, or toward Transform to permit a substantial rewrite. Its position remains visible between requests. In the Reviewing layer, the screen explicitly relabels it as the strength of changes to apply to a selected revision.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> A retained linear position creates a different gesture from a dial or button. Neither base controller has a physical fader, although software can reproduce its setting. A motorized fader could also move to reflect restored state, but that is a separate actuator and driver choice; this photo shows a nonmotorized fader.</p></div></article>
+
+<article class="control" id="joystick">
+<a class="photo" href="https://www.adafruit.com/product/512" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/512-04.jpg" alt="An analog two-axis thumb joystick with a select switch"></a>
+<div class="text"><span class="number">07 · Desk console</span><h3>Joystick: steer a next move</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/512">Adafruit analog two-axis joystick</a>.</p>
+<p><span class="label">How ours works.</span> Left requests a simpler version, right a more detailed one, up a broader view, and down a concrete example. Displacement could optionally select a small versus substantial change, previewed on screen. Clicking commits the displayed move. It returns to center rather than leaving a persistent setting.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> Micro already has an analog stick, so four directional actions are not new. Its documented native integration converts movement into four actions. Our own service could use continuous displacement and combinations; that extends the integration, rather than proving its hardware cannot do it. Base Stream Deck has no joystick.</p></div></article>
+
+<article class="control" id="ribbon">
+<a class="photo" href="https://www.adafruit.com/product/178" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/178-00.jpg" alt="A thin linear SoftPot ribbon sensor for detecting finger position"></a>
+<div class="text"><span class="number">08 · Desk console</span><h3>Touch ribbon: change emphasis</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/178">Spectra Symbol SoftPot sold by Adafruit</a>. This example is a resistive position sensor, not a capacitive screen.</p>
+<p><span class="label">How ours works.</span> A strip labeled Concept ↔ Example sets whether the next answer emphasizes general ideas or concrete illustrations. Touching sets a position; the display confirms it. Releasing preserves that setting until another control changes it. Other layers can provide different printed or displayed endpoints.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> It adds a dedicated one-dimensional position input absent from Micro. Stream Deck + already has a touch strip, so touch interaction is not unique; a custom ribbon can supply continuous position as a specific sensor signal and can be built into the enclosure or a handheld object.</p></div></article>
+
+<article class="control" id="trackball">
+<a class="photo" href="https://shop.pimoroni.com/products/trackball-breakout" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/Trackball_1_of_4.JPG?v=1560173220" alt="Pimoroni miniature illuminated trackball breakout"></a>
+<div class="text"><span class="number">09 · Desk console</span><h3>Trackball / jog wheel: navigate versions</h3><p class="caption">Reference: <a href="https://shop.pimoroni.com/products/trackball-breakout">Pimoroni clickable, illuminated trackball</a>. A jog wheel is an alternative, not a required second control.</p>
+<p><span class="label">How ours works.</span> Roll horizontally through saved alternatives; vertically through their sections or titles. Click to choose the current working target. Navigation reads saved results, so browsing does not generate another model response. A click can also select which draft the next Challenge action addresses.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> A trackball adds rolling, two-axis navigation absent from both base controllers. Micro's dial and Stream Deck +'s dials can already navigate alternatives. The physical trackball is different; navigating versions is not an exclusive software function.</p></div></article>
+
+<article class="control" id="nfc">
+<a class="photo" href="https://www.adafruit.com/product/364" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/364-04.jpg" alt="An NFC reader board with a card and key-tag examples"></a>
+<div class="text"><span class="number">10 · Card landing area</span><h3>Tagged cards and tokens: choose a perspective</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/364">Adafruit PN532 NFC/RFID reader</a>. The reader would sit beneath a marked area on the console.</p>
+<p><span class="label">How ours works.</span> Tap a card labeled Skeptical member, First-time reader, or Editor. Its identifier selects a known perspective, and the display names it. Another set of cards can select projects. A card tap selects state; it does not launch a response. The reader identifies the tag, not arbitrary text written on the card.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> Neither base controller has a tag reader. This makes the choice a tangible, labeled object. A Stream Deck button could select the same perspective; it cannot identify a physical card without additional reader hardware.</p></div></article>
+
+<article class="control" id="capacitive">
+<a class="photo" href="https://www.adafruit.com/product/1982" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/1982-08.jpg" alt="A twelve-channel capacitive touch sensor breakout for wiring touch surfaces"></a>
+<div class="text"><span class="number">11 · Handheld touch object</span><h3>Touch-sensitive surfaces</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/1982">Adafruit MPR121 touch controller</a>. This is the internal component; we would add conductive touch patches to an object.</p>
+<p><span class="label">How ours works.</span> An object with three labeled patches offers Clarify, Expand, and Challenge. Touching a patch previews its action on the console. A separate Go action commits it, so merely picking up the object need not trigger a response. The object could be a puck, a wooden form with metal inlays, or a small cube.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> It adds touch detection on shapes we design. The resulting actions can be reproduced by buttons; the new capability is embedding the input in a different physical object. Stream Deck +'s touch strip already supports touch on its own surface.</p></div></article>
+
+<article class="control" id="motion">
+<a class="photo" href="https://www.adafruit.com/product/4333" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/4333-11.jpg" alt="Circuit Playground Bluefruit board containing motion sensing and Bluetooth for a handheld object"></a>
+<div class="text"><span class="number">12 · Handheld motion object</span><h3>Tilt and shake</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/4333">Circuit Playground Bluefruit</a>. Photo shows the electronics, which we would enclose in a palm-sized object.</p>
+<p><span class="label">How ours works.</span> A deliberate shake requests another variation using the same target and settings. In a selected motion layer, left/right tilt previews a shift toward practical or imaginative treatment. A touch or button commits that tilt setting. The console identifies the object and its active mapping.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> This adds sensing of the object's motion and orientation, absent from the documented base Micro and Stream Deck control sets. It requires motion-sensing hardware and gesture recognition; a Pi alone does not sense its user's movements.</p></div></article>
+
+<article class="control" id="display">
+<a class="photo" href="https://www.adafruit.com/product/2232" target="_blank" rel="noopener"><img src="https://www.adafruit.com/images/480x360/2232-07.jpg" alt="A five-inch HDMI display showing a computer desktop"></a>
+<div class="text"><span class="number">13 · Main console · feedback surface</span><h3>A readable display, with optional voice output</h3><p class="caption">Reference: <a href="https://www.adafruit.com/product/2232">Adafruit 5-inch HDMI display</a>, pictured showing a desktop. Ours would show the focused controller interface.</p>
+<p><span class="label">How ours works.</span> Show the active idea or draft, selected perspective, mode, control values, next action, and agent state. Brief answers and one question can appear here; a connected larger screen shows long drafts. With a microphone and speaker added, voice can provide a route to working without a nearby laptop.</p>
+<p class="difference"><span class="label">Beyond existing hardware.</span> Micro has status lights rather than a text display. Stream Deck already displays text and images, and the + has a touch strip. Our gain is a larger continuous reading surface and an independently running interface—not the invention of visual feedback.</p></div></article>
+</div>
+
+<h2 id="comparison">The hardware gains, compared with existing controllers</h2>
+<div class="table-wrap"><table><thead><tr><th>Capability</th><th>Custom Pi instrument</th><th>Micro / Stream Deck comparison</th></tr></thead><tbody>
+<tr><td>Software-defined knob resistance and end stops</td><td>Yes, with motorized haptic modules and local controllers</td><td>Absent from their documented standard dials</td></tr>
+<tr><td>Pressure, continuous foot position, tagged objects, motion</td><td>Yes, with the corresponding sensors and interfaces</td><td>Absent from the base devices; a computer can add separate peripherals</td></tr>
+<tr><td>Custom enclosure and physical layout</td><td>We choose the geometry, materials, spacing, and control sizes</td><td>The purchased hardware has a fixed physical arrangement</td></tr>
+<tr><td>Run the controller without a nearby Mac or PC</td><td>The Pi runs its own program and network connection</td><td>The usual Micro / Stream Deck setup depends on a host; that host can still control a remote VM</td></tr>
+<tr><td>Conversation-aware skills, modes, layers, and remote agent work</td><td>Our session service provides these</td><td>Not unique: existing controllers can trigger host software that provides them</td></tr>
+<tr><td>Footswitch actions and changing visual labels</td><td>Available in our design</td><td>Not unique: Stream Deck has dynamic displays and a separate pedal product</td></tr>
+</tbody></table></div>
+<p class="scope" style="margin-top:16px">Comparison sources: <a href="https://learn.chatgpt.com/docs/features/codex-micro">official Micro controls, skills, layers, and status lighting</a>; <a href="https://docs.elgato.com/streamdeck/sdk/guides/keys/">Stream Deck key displays</a>; <a href="https://docs.elgato.com/streamdeck/sdk/guides/dials/">Stream Deck + dials and touch feedback</a>; <a href="https://www.elgato.com/us/en/p/stream-deck-pedal">Stream Deck Pedal</a>. These comparisons concern documented standard controls, not a claim that their firmware could never be modified.</p>
+
+<h2 id="example">A complete interaction: challenge a workshop proposal</h2>
+<ol class="walkthrough">
+<li><strong>Choose the target.</strong> Roll the trackball to Workshop proposal, version 3, and click. The display names that draft.</li>
+<li><strong>Choose whose eyes to use.</strong> Tap the Skeptical member card. Its label appears on screen.</li>
+<li><strong>Choose the move.</strong> Press Critique. Set Depth to Thorough with the haptic knob; leave the revision fader near Preserve.</li>
+<li><strong>Express your intention.</strong> Move the expression pedal toward distant alternatives, or squeeze the puck to preview stronger scrutiny. The screen names the affected dimension and shows which control currently owns it.</li>
+<li><strong>Speak or act.</strong> Hold the talk pedal to add a clarification. Review the transcript. If using pressure, squeeze and hold the chosen level while tapping the action pedal. The agent challenges the displayed draft with those settings.</li>
+<li><strong>Receive feedback.</strong> The device acknowledges the request, shows Working, then displays the main objection or a question. A larger screen can show the full critique.</li>
+<li><strong>Continue physically.</strong> Set the ribbon toward Example, then press Go for more concrete illustrations. Touch Expand on the handheld object to preview that move and press Go, or deliberately shake the motion object for another variation. Each request stays attached to the same working target.</li>
+</ol>
+<p>This example uses many controls to show their roles, not because a person should need all of them to complete one task. The kit lets us compare which gestures help people discover a useful move and which create extra work.</p>
+
+<h2 id="engineering">What we would build beneath the surface</h2>
+<div class="notes">
+<p><strong>Local device:</strong> a network-capable Pi runs the screen, reads inputs, maintains visible settings, and sends actions. Dedicated controllers handle haptic motors. Analog sensors use suitable ADC interfaces; digital modules use I2C, GPIO, USB, or another supported connection. This is an architecture, not yet a pin-level design.</p>
+<p><strong>Remote session:</strong> a service on a Mac or VM owns the conversation, active target, selected perspective, instructions, and agent tools. It receives an explicit request and its settings, invokes an API-backed model or agent, and streams observed state back. MCP can expose optional tools for the agent to read controls or update labels. Busy and completion indicators come from session events, not a model's guess.</p>
+<p><strong>State behavior:</strong> the knobs and fader set persistent values. The expression pedal overrides Range after meaningful movement; touching Range hands control back. Pressure temporarily modifies critique intensity. Layer changes preview new meanings and restored values before the next request. The screen distinguishes Selected, Applied, Working, and Disconnected; actions are not silently replayed after reconnecting.</p>
+<p><strong>Conversation access:</strong> an API-backed workspace maintains its own session. This does not automatically attach to an existing consumer ChatGPT conversation. For coding, an agent such as Codex can provide files, tools, and skills rather than a bare model call. Sources: <a href="https://developers.openai.com/api/docs/guides/conversation-state">API conversation state</a>, <a href="https://learn.chatgpt.com/docs/app-server">Codex App Server</a>, <a href="https://gpiozero.readthedocs.io/en/stable/api_spi.html">analog input interfaces</a>, and <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html">Pi hardware connections</a>.</p>
+<p><strong>Purpose:</strong> make useful thinking moves physically discoverable for knowledge workers. A functioning sensor rig would demonstrate technical feasibility; whether it improves confidence, thinking, or writing remains something to observe with people.</p>
+</div>
+<div class="footer">Reference photography belongs to the respective creators and manufacturers. Images are loaded from their published locations and linked to their sources. The custom enclosures, mappings, and assembled instrument described here have not been built.</div>
+</main></body></html>
