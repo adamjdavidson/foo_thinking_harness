@@ -1,6 +1,6 @@
 # Next steps
 
-This app is a first, working piece of a larger idea: a **thinking harness**. That means software that creates better conditions for thinking with AI, so that ideas come out bigger, more surprising, more rigorous and more useful. This document sets out the idea, where the app stands, and what to build and test next.
+This app is a first, working piece of a larger idea: a **thinking harness**. That means software that creates better conditions for thinking with AI, so that ideas come out bigger, more surprising, more rigorous and more useful. This document sets out the idea, where the app stands, and what to build and test next. The idea was first presented at Foo Camp in October 2026; the [slides and talk text](talk/index.html) and the anonymized [session transcript](talk/transcript.html) are in `talk/`.
 
 ## The idea
 

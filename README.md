@@ -4,7 +4,7 @@
 
 A browser-based instrument for thinking with AI. You steer the conversation with four persistent dials and a set of partnership modes (Play, Extract, Boss, Buddha, Influencer) instead of rewriting your prompt each time. Conversations, dial positions and the settings used for every reply are saved locally.
 
-It runs as a small local Node server with no dependencies and no build step, on any machine with Node: a laptop, a desktop or a home server such as a Raspberry Pi. You use it in a browser with a keyboard and mouse, or optionally from a phone. [`proposal.html`](proposal.html) is the original design proposal. [`nextsteps.md`](nextsteps.md) describes the larger idea behind it, a *thinking harness*, and what to build next.
+It runs as a small local Node server with no dependencies and no build step, on any machine with Node: a laptop, a desktop or a home server such as a Raspberry Pi. You use it in a browser with a keyboard and mouse, or optionally from a phone. [`proposal.html`](proposal.html) is the original design proposal. [`nextsteps.md`](nextsteps.md) describes the larger idea behind it, a *thinking harness*, and what to build next. The idea was first presented as a Foo Camp talk in October 2026: see the [slides and talk text](talk/index.html) and the anonymized [session transcript](talk/transcript.html).
 
 ## Quick start
 
